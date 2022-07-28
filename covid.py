@@ -17,5 +17,5 @@ def getCountryStats(country):
 #fetch goruped data
 def getGroupedData():
     data = getDataSource()
-    mygrouped_data = data.groupby(by='region').sum()['Deaths - newly reported in last 7 days', 'Transmission Classification']
+    mygrouped_data = data.groupby(by='region').sum()['Deaths - newly reported in last 7 days']
     return(mygrouped_data.reset_index())
