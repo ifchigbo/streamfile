@@ -8,14 +8,16 @@ from covid import getDataSource,getCountryStats
 import streamlit.components as comp 
 
 st.set_page_config(
-     page_title="Covid-19",
+     page_title="Covid-19 Data Processing",
      page_icon="🧊",
      layout="wide",
      initial_sidebar_state="expanded",
      menu_items={
-         'Get Help': 'https://www.extremelycoolapp.com/help',
-         'Report a bug': "https://www.extremelycoolapp.com/bug",
-         'About': "# This is a header. This is an *extremely* cool app!"
+        '''''
+         'Get Help': '',
+         'Report a bug':,
+         'About': 
+         '''
      }
 )
 def title_Section():
@@ -82,7 +84,7 @@ def covidStatsCountry():
             st.write(mycountry)
         except Error  as error:
             print(error)
-            
+
     #The main method that runs all files
 def allMethods():
     title_Section()
