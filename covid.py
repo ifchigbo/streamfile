@@ -14,6 +14,7 @@ def getCountryStats(country):
     mycountry = df.loc[df['country'] ==  country]
     return mycountry
 
+#fetch goruped data
 def getGroupedData():
     data = getDataSource()
     mygrouped_data = data.groupby(by='region').sum()['Deaths - newly reported in last 7 days', 'Transmission Classification']
