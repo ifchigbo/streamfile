@@ -79,7 +79,7 @@ def covidStatsCountry():
         mycountry = getCountryStats(country)
         st.write(mycountry)
 
-    #my
+    #The main method that runs all files
 def allMethods():
     title_Section()
     displayInitialAnalysis()
