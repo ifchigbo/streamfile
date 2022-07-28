@@ -76,9 +76,13 @@ def covidStatsCountry():
     country = st.text_input("Get Statistics per Region")
 
     if  country:
-        mycountry = getCountryStats(country)
-        st.write(mycountry)
+        try:
 
+            mycountry = getCountryStats(country)
+            st.write(mycountry)
+        except Error  as error:
+            print(error)
+            
     #The main method that runs all files
 def allMethods():
     title_Section()
